@@ -19,6 +19,8 @@ public class TestAssert03 {
     }
 
     public static void main(String[] args) {
+//      Salida es Exception in thread "main" java.lang.AssertionError
+//      Exception lanzada por main.
         try {
             test();
         } catch (Exception ex) {

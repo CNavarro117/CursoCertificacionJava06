@@ -16,7 +16,7 @@ public class A {
             B b = new B();
             b.method2();          
             // More code here
-        } catch (TestException te) {
+        } catch (TestException04 te) {
             throw new RuntimeException(te);
         } 
     }
@@ -32,7 +32,7 @@ public class A {
 }
 
 class B {
-    public void method2() throws TestException {
+    public void method2() throws TestException04 {
         // More code here
     }
 
@@ -45,5 +45,5 @@ class B {
     }
 }
 
-class TestException extends Exception {
+class TestException04 extends Exception {
 }

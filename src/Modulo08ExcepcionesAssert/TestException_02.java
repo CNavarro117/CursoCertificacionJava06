@@ -7,23 +7,24 @@ package Modulo08ExcepcionesAssert;
 
 /**
  *
- * @author CNR
+ * @author CNavarro117
  */
-public class Ejemplo {
+public class TestException_02 {
     static void test(){
         try{
             String x = null;
-            System.out.println(x.toString() + " ");
-        } finally {
-            System.out.println("finally");
+            System.out.print(x.toString() + " ");
+        } finally{
+            System.out.print("finally ");
         }
     }
     
     public static void main(String[] args) {
-        try{test();}
-        catch (Exception ex) {System.out.println("exception");}
-        
-        // Se genera una salida de " finally exception"
-        
+        try{
+            test();
+        } catch(Exception ex){
+            System.out.print("exception ");
+        }
     }
+    
 }
